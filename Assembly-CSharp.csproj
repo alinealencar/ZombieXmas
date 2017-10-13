@@ -53,6 +53,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CandyCaneController.cs" />
      <Compile Include="Assets\Scripts\EarthController.cs" />
+     <Compile Include="Assets\Scripts\LifeController.cs" />
+     <Compile Include="Assets\Scripts\SnowballCollision.cs" />
      <Compile Include="Assets\Scripts\SnowballController.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
