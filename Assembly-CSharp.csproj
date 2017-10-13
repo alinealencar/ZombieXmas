@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CandyCaneController.cs" />
      <Compile Include="Assets\Scripts\EarthController.cs" />
      <Compile Include="Assets\Scripts\SnowballController.cs" />
  <Reference Include="UnityEngine.Analytics">
