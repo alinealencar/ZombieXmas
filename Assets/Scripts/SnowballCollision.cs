@@ -25,21 +25,23 @@ public class SnowballCollision : MonoBehaviour {
 		// Detect colision with Mr. Cane
 		if (other.gameObject.tag.Equals ("cane")) {
 			Debug.Log ("Collision with Mr. Cane\n");
+			// Play sound
 			if (_mrCaneSound != null) {
 				_mrCaneSound.Play ();
 			}
-			//gameController.Score += 100;
+			Player.Instance.LoseLife ();
 		}
 		//Add points
 		else if (other.gameObject.tag.Equals("energy")) {
 			Debug.Log ("Collision with energy \n");
+
 
 //			GameObject e = Instantiate (explosion);
 //			e.GetComponent<Transform> ().position = 
 //				other.gameObject.GetComponent<Transform> ().position;
 
 			other.gameObject.GetComponent<LifeController> ().Reset(); //pull bolt back to the top
-			//gameController.Life -= 1;
+			Player.Instance.Score += 100;
 
 		}
 	}

@@ -24,11 +24,13 @@ public class SnowballController : MonoBehaviour {
 	void Update () {
 		_curPosition = _transform.position;
 		// Move Mr. Snowball
-		if(Input.GetKey(KeyCode.W)){
+		float userInput = Input.GetAxis("Vertical");
+
+		if(userInput>0){
 			// Press A, move him upwards
 			_curPosition += new Vector2(0, speed);
 		}
-		if(Input.GetKey(KeyCode.S)){
+		if(userInput<0){
 			// Press S, move him downwards
 			_curPosition -= new Vector2(0, speed);
 		}

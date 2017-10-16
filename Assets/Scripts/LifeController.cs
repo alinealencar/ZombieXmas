@@ -46,6 +46,5 @@ public class LifeController : MonoBehaviour {
 		//Bolts show up going up or down
 		float x = Random.Range(-381, 381);
 		_transform.position = new Vector2 (x, -388 + Random.Range(0,100));
-		Debug.Log(_transform.position.ToString());
 	}
 }

@@ -1,9 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SnowballController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
     <Files>
+      <File FileName="Assets/Scripts/SnowballController.cs" Line="29" Column="17" />
       <File FileName="Assets/Scripts/EarthController.cs" Line="29" Column="52" />
-      <File FileName="Assets/Scripts/SnowballController.cs" Line="34" Column="4" />
+      <File FileName="Assets/Scripts/CandyCaneController.cs" Line="25" Column="3" />
+      <File FileName="Assets/Scripts/SnowballCollision.cs" Line="31" Column="5" />
+      <File FileName="Assets/Scripts/LifeController.cs" Line="48" Column="69" />
+      <File FileName="Assets/Scripts/Player.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
