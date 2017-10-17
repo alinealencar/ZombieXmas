@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/********************************************************************
+ * COMP3064 - ZombieXmas Game
+ * 
+ * Class: Player
+ * Description: This is a singleton class that keeps track of the score
+ * 		of the game and it communicates with the UIController class.
+ * 
+ * Author: Aline Alencar
+ ********************************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

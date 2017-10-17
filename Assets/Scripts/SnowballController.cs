@@ -1,4 +1,16 @@
-﻿using System.Collections;
+﻿/********************************************************************
+ * COMP3064 - ZombieXmas Game
+ * 
+ * Class: SnowBallController
+ * Description: This class acts as the controller to the Snowball
+ * 		character. It handles its position (movement) in the screen as
+ * 		well as the speed in which it moves and the boundaries of the 
+ * 		screen.
+ * 
+ * Author: Aline Alencar
+ ********************************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

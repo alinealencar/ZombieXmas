@@ -1,4 +1,15 @@
-﻿using System.Collections;
+﻿/********************************************************************
+ * COMP3064 - ZombieXmas Game
+ * 
+ * Class: EarthController
+ * Description: This class acts as the controller to the background of
+ * 		the game. It handles its movement from right to left and the
+ * 		speed in which this scrolling happens.
+ * 
+ * Author: Aline Alencar
+ ********************************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

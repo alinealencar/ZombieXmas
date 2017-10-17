@@ -1,4 +1,16 @@
-﻿using System.Collections;
+﻿/********************************************************************
+ * COMP3064 - ZombieXmas Game
+ * 
+ * Class: LifeController
+ * Description: This class acts as the controller to the bolts that
+ * 		generates points for the player. It handles its position 
+ * 		(movement) in the screen, the speed in which it moves and 
+ * 		random generation of new bolts.
+ * 
+ * Author: Aline Alencar
+ ********************************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

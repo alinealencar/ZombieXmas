@@ -1,4 +1,16 @@
-﻿using System.Collections;
+﻿/********************************************************************
+ * COMP3064 - ZombieXmas Game
+ * 
+ * Class: CandyCaneController
+ * Description: This class acts as the controller to the Zombie Candy
+ * 		Cane character (enemy). It handles its position (movement) in 
+ * 		the screen, the speed in which it moves and random generation 
+ * 		of new enemies.
+ * 
+ * Author: Aline Alencar
+ ********************************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/********************************************************************
+ * COMP3064 - ZombieXmas Game
+ * 
+ * Class: UIController
+ * Description: This class maintains the user interface, including
+ * 		labels, buttons, scores and lives left.
+ * 
+ * Author: Aline Alencar
+ ********************************************************************/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,21 +16,22 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour {
-	[SerializeField]
-	GameObject candyCane;
-
+	//Images that represent the lives left for the user
 	[SerializeField]
 	Image life1;
 	[SerializeField]
 	Image life2;
 	[SerializeField]
 	Image life3;
+	//Label that shows the current score 
 	[SerializeField]
 	Text scoreLabel;
+	//Label that shows up when the player loses all of their lives (game over)
 	[SerializeField]
 	Text gameOverLabel;
+	//Button to start or restart the game
 	[SerializeField]
-	Button resetBtn;
+	Button playBtn;
 
 
 
@@ -29,7 +40,8 @@ public class UIController : MonoBehaviour {
 		Player.Instance.Score = 0;
 
 		gameOverLabel.gameObject.SetActive (false);
-		resetBtn.gameObject.SetActive (false);
+		// Show the button at the beginning so the user can start the game
+		playBtn.gameObject.SetActive (true);
 
 		life1.gameObject.SetActive (true);
 		life2.gameObject.SetActive (true);
@@ -39,7 +51,7 @@ public class UIController : MonoBehaviour {
 
 	public void gameOver(){
 		gameOverLabel.gameObject.SetActive (true);
-		resetBtn.gameObject.SetActive (true);
+		playBtn.gameObject.SetActive (true);
 
 		life1.gameObject.SetActive (false);
 		life2.gameObject.SetActive (false);
@@ -84,12 +96,4 @@ public class UIController : MonoBehaviour {
 			SceneManager.GetActiveScene ().name);
 
 	}
-
-//	private IEnumerator AddEnemy(){
-//		int time = Random.Range (1, 10);
-//		yield return new WaitForSeconds ((float) time);
-//		Instantiate (candyCane);
-//		StartCoroutine ("AddEnemy");
-//	}
-
 }
