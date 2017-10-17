@@ -17,22 +17,22 @@ using UnityEngine;
 public class SnowballController : MonoBehaviour {
 
 	[SerializeField]
-	private float speed = 7f;
+	private float speed = 7f; //Speed in which the character moves
 	[SerializeField]
-	private float upperBound; 
+	private float upperBound; //Upper boundary of the screen
 	[SerializeField]
-	private float lowerBound;
+	private float lowerBound; //Lower boundary of the screen
 
 	private Transform _transform;
 	private Vector2 _curPosition;
 
-	// Use this for initialization
+	/* This method is called once in the initialization of the game. */
 	void Start () {
 		_transform = gameObject.GetComponent<Transform> ();
 		_curPosition = _transform.position;
 	}
-	
-	// Update is called once per frame
+
+	/* Updates the screen. Called once per frame. */
 	void Update () {
 		_curPosition = _transform.position;
 		// Move Mr. Snowball
@@ -50,6 +50,7 @@ public class SnowballController : MonoBehaviour {
 		_transform.position = _curPosition;
 	}
 
+	/* Checks if the character is within the boundaries of the screen. */
 	private void CheckBounds(){
 		if (_curPosition.y < lowerBound) {
 			_curPosition.y = lowerBound;

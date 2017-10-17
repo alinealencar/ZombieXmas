@@ -26,7 +26,7 @@ public class Player {
 		get { return _score; }
 		set { 
 			_score = value;
-			gCtrl.updateUI();
+			gCtrl.UpdateScoreUI();
 		}
 
 	}
@@ -43,6 +43,6 @@ public class Player {
 
 	//Mr. Snowball loses a life
 	public void LoseLife(){
-		gCtrl.loseLife ();
+		gCtrl.UpdateLifeUI ();
 	}
 }

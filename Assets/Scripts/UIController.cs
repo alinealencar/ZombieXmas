@@ -33,10 +33,8 @@ public class UIController : MonoBehaviour {
 	[SerializeField]
 	Button playBtn;
 
-
-
-	private void initialize(){
-
+	/* This method sets the status of the UI elements in the initialization of the game.*/
+	private void Initialize(){
 		Player.Instance.Score = 0;
 
 		gameOverLabel.gameObject.SetActive (false);
@@ -49,7 +47,9 @@ public class UIController : MonoBehaviour {
 		scoreLabel.gameObject.SetActive (true);
 	}
 
-	public void gameOver(){
+	/* This method sets the status of the UI elements when the player
+	 * reaches a game over status. */
+	public void GameOver(){
 		gameOverLabel.gameObject.SetActive (true);
 		playBtn.gameObject.SetActive (true);
 
@@ -59,13 +59,13 @@ public class UIController : MonoBehaviour {
 		scoreLabel.gameObject.SetActive (false);
 	}
 
-	public void updateUI(){
-
+	/* This method updates the score label in the UI with an updated score. */
+	public void UpdateScoreUI(){
 		scoreLabel.text = "Score: " + Player.Instance.Score;
-		//lifeLabel.text = "Life: " + Player.Instance.Life;
 	}
 
-	public void loseLife(){
+	/* This method updates the life status in the UI. */
+	public void UpdateLifeUI(){
 		if (life3.IsActive()) {
 			life3.gameObject.SetActive (false);
 		} 
@@ -90,7 +90,8 @@ public class UIController : MonoBehaviour {
 
 	}
 
-	public void ResetBtnClick(){
+	/* This method starts/restarts the game when the user clicks on the play button. */
+	public void PlayBtnClick(){
 		SceneManager.
 		LoadScene (
 			SceneManager.GetActiveScene ().name);

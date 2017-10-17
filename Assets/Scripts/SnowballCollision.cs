@@ -16,46 +16,49 @@ public class SnowballCollision : MonoBehaviour {
 	//[SerializeField]
 	//GameController gameController;
 
+	//Animation
 //	[SerializeField]
 //	GameObject explosion;
 
 	private AudioSource _mrCaneSound;
 	private AudioSource _energySound;
 
-	// Use this for initialization
+	/* This method is called once in the initialization of the game. */
 	void Start () {
 		_mrCaneSound = gameObject.GetComponent<AudioSource> ();
 		_energySound = gameObject.GetComponent<AudioSource> ();
 	}
 
-	// Update is called once per frame
+	/* Updates the screen. Called once per frame. */
 	void Update () {
 
 	}
 
+	/* This method handles the collision of Mr. Snowball with bolts and enemies.
+	 *  - Collision with bolts renders score increase.
+	 *  - Collision with enemies renders the loss of 1 life.
+	 *  - Both collisions trigger a sound effect. */
 	public void OnTriggerEnter2D(Collider2D other){
-		// Detect colision with Mr. Cane
+		// Detect collision with Mr. Cane
 		if (other.gameObject.tag.Equals ("cane")) {
-			//Debug.Log ("Collision with Mr. Cane\n");
 			// Play sound
 			if (_mrCaneSound != null) {
 				_mrCaneSound.Play ();
 			}
 			Player.Instance.LoseLife ();
 		}
-		//Add points
+		// Detect collision with bolts
 		else if (other.gameObject.tag.Equals("energy")) {
-			//Debug.Log ("Collision with energy \n");
-
 			// Play sound
 			if (_energySound != null) {
 				_energySound.Play ();
 			}
+			//Animation
 //			GameObject e = Instantiate (explosion);
 //			e.GetComponent<Transform> ().position = 
 //				other.gameObject.GetComponent<Transform> ().position;
 
-			other.gameObject.GetComponent<LifeController> ().Reset(); //pull bolt back to the top
+			other.gameObject.GetComponent<LifeController> ().Reset(); //Pull bolt back to the top
 			Player.Instance.Score += 100;
 
 		}

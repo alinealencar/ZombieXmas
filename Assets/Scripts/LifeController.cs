@@ -15,7 +15,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LifeController : MonoBehaviour {
-	//Public variables
 	[SerializeField]
 	float minYSpeed = -1f;
 	[SerializeField]
@@ -26,17 +25,17 @@ public class LifeController : MonoBehaviour {
 	float maxXSpeed = 10f;
 	[SerializeField]
 
-	// Private variables
 	private Transform _transform;
 	private Vector2 _curSpeed;
 	private Vector2 _curPosition;
 
-	// Use this for initialization
+	/* This method is called once in the initialization of the game. */
 	void Start () {
 		_transform = gameObject.GetComponent<Transform> ();
 		Reset ();
 	}
 
+	/* Updates the screen. Called once per frame. */
 	void Update () {
 		_curPosition = _transform.position;
 		_curPosition -= _curSpeed;
@@ -49,6 +48,7 @@ public class LifeController : MonoBehaviour {
 		}
 	}
 
+	/* This method generates more bolts. */
 	public void Reset(){
 		float xSpeed = Random.Range (minXSpeed, maxXSpeed);
 		float ySpeed = Random.Range (minYSpeed, maxYSpeed);
