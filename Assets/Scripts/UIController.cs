@@ -32,13 +32,15 @@ public class UIController : MonoBehaviour {
 	//Button to start or restart the game
 	[SerializeField]
 	Button playBtn;
+	[SerializeField]
+	Button startBtn;
+
 
 	/* This method sets the status of the UI elements in the initialization of the game.*/
 	private void Initialize(){
 		Player.Instance.Score = 0;
 
 		gameOverLabel.gameObject.SetActive (false);
-		// Show the button at the beginning so the user can start the game
 		playBtn.gameObject.SetActive (false);
 
 		life1.gameObject.SetActive (true);
@@ -81,7 +83,6 @@ public class UIController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		playBtn.gameObject.SetActive (true);
 		Player.Instance.gCtrl = this;
 		Initialize ();
 	}
@@ -95,5 +96,10 @@ public class UIController : MonoBehaviour {
 		SceneManager.
 		LoadScene (
 			SceneManager.GetActiveScene ().name);
+	}
+
+	public void StartGameClick(){
+		startBtn.gameObject.SetActive (false);
+		Destroy (startBtn);
 	}
 }
