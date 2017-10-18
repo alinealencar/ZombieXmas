@@ -20,13 +20,18 @@ public class SnowballCollision : MonoBehaviour {
 //	[SerializeField]
 //	GameObject explosion;
 
+	private AudioSource[] allAudios;
 	private AudioSource _mrCaneSound;
 	private AudioSource _energySound;
 
 	/* This method is called once in the initialization of the game. */
 	void Start () {
-		_mrCaneSound = gameObject.GetComponent<AudioSource> ();
-		_energySound = gameObject.GetComponent<AudioSource> ();
+		//Get all AudioSources connected to Snowball
+		allAudios = gameObject.GetComponents<AudioSource> ();
+		//The first audio will be for collision with the enemy
+		_mrCaneSound = allAudios [0];
+		//The second audio will be for collision with the bolts of energy
+		_energySound = allAudios [1];
 	}
 
 	/* Updates the screen. Called once per frame. */

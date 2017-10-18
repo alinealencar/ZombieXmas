@@ -39,7 +39,7 @@ public class UIController : MonoBehaviour {
 
 		gameOverLabel.gameObject.SetActive (false);
 		// Show the button at the beginning so the user can start the game
-		playBtn.gameObject.SetActive (true);
+		playBtn.gameObject.SetActive (false);
 
 		life1.gameObject.SetActive (true);
 		life2.gameObject.SetActive (true);
@@ -56,7 +56,7 @@ public class UIController : MonoBehaviour {
 		life1.gameObject.SetActive (false);
 		life2.gameObject.SetActive (false);
 		life3.gameObject.SetActive (false);
-		scoreLabel.gameObject.SetActive (false);
+		scoreLabel.gameObject.SetActive (true);
 	}
 
 	/* This method updates the score label in the UI with an updated score. */
@@ -75,19 +75,19 @@ public class UIController : MonoBehaviour {
 		else if (life1.IsActive()) {
 			// Lose last life and game over
 			life1.gameObject.SetActive (false);
-			gameOver ();
+			GameOver ();
 		} 
 	}
 
 	// Use this for initialization
 	void Start () {
+		playBtn.gameObject.SetActive (true);
 		Player.Instance.gCtrl = this;
-		initialize ();
+		Initialize ();
 	}
 
 	// Update is called once per frame
 	void Update () {
-
 	}
 
 	/* This method starts/restarts the game when the user clicks on the play button. */
@@ -95,6 +95,5 @@ public class UIController : MonoBehaviour {
 		SceneManager.
 		LoadScene (
 			SceneManager.GetActiveScene ().name);
-
 	}
 }

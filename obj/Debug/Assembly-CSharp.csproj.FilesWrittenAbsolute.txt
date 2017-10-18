@@ -1,7 +1,3 @@
-/Users/aline/Desktop/George Brown/Fall 17/COMP3064 - Game Development/COMP3064_A1_NevesAlencar_Aline/Temp/bin/Debug/Assembly-CSharp.dll.mdb
-/Users/aline/Desktop/George Brown/Fall 17/COMP3064 - Game Development/COMP3064_A1_NevesAlencar_Aline/Temp/bin/Debug/Assembly-CSharp.dll
-/Users/aline/Desktop/George Brown/Fall 17/COMP3064 - Game Development/COMP3064_A1_NevesAlencar_Aline/obj/Debug/Assembly-CSharp.dll
-/Users/aline/Desktop/George Brown/Fall 17/COMP3064 - Game Development/COMP3064_A1_NevesAlencar_Aline/obj/Debug/Assembly-CSharp.dll.mdb
 /Users/aline/Desktop/George Brown/Fall 17/COMP3064 - Game Development/COMP3064_A1_NevesAlencar_Aline/Temp/bin/Debug/UnityEngine.dll
 /Users/aline/Desktop/George Brown/Fall 17/COMP3064 - Game Development/COMP3064_A1_NevesAlencar_Aline/Temp/bin/Debug/UnityEditor.dll
 /Users/aline/Desktop/George Brown/Fall 17/COMP3064 - Game Development/COMP3064_A1_NevesAlencar_Aline/Temp/bin/Debug/UnityEngine.Analytics.dll
@@ -21,3 +17,7 @@
 /Users/aline/Desktop/George Brown/Fall 17/COMP3064 - Game Development/COMP3064_A1_NevesAlencar_Aline/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/aline/Desktop/George Brown/Fall 17/COMP3064 - Game Development/COMP3064_A1_NevesAlencar_Aline/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/aline/Desktop/George Brown/Fall 17/COMP3064 - Game Development/COMP3064_A1_NevesAlencar_Aline/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/aline/Desktop/George Brown/Fall 17/COMP3064 - Game Development/COMP3064_A1_NevesAlencar_Aline/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/aline/Desktop/George Brown/Fall 17/COMP3064 - Game Development/COMP3064_A1_NevesAlencar_Aline/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/aline/Desktop/George Brown/Fall 17/COMP3064 - Game Development/COMP3064_A1_NevesAlencar_Aline/obj/Debug/Assembly-CSharp.dll
+/Users/aline/Desktop/George Brown/Fall 17/COMP3064 - Game Development/COMP3064_A1_NevesAlencar_Aline/obj/Debug/Assembly-CSharp.dll.mdb
