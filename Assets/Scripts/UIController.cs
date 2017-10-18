@@ -32,8 +32,13 @@ public class UIController : MonoBehaviour {
 	//Button to start or restart the game
 	[SerializeField]
 	Button playBtn;
+	//UI elements associated with the start screen
 	[SerializeField]
 	Button startBtn;
+	[SerializeField]
+	Text titlelbl;
+	[SerializeField]
+	Text introlbl;
 
 
 	/* This method sets the status of the UI elements in the initialization of the game.*/
@@ -59,6 +64,9 @@ public class UIController : MonoBehaviour {
 		life2.gameObject.SetActive (false);
 		life3.gameObject.SetActive (false);
 		scoreLabel.gameObject.SetActive (true);
+
+		//Stop the game from continuing
+		Time.timeScale = 0;
 	}
 
 	/* This method updates the score label in the UI with an updated score. */
@@ -83,6 +91,8 @@ public class UIController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		//The game does not change its status. Character cannot be moved.
+		Time.timeScale = 0;
 		Player.Instance.gCtrl = this;
 		Initialize ();
 	}
@@ -100,6 +110,9 @@ public class UIController : MonoBehaviour {
 
 	public void StartGameClick(){
 		startBtn.gameObject.SetActive (false);
-		Destroy (startBtn);
+		titlelbl.gameObject.SetActive (false);
+		introlbl.gameObject.SetActive (false);
+		//Make the game playable again
+		Time.timeScale = 1;
 	}
 }
