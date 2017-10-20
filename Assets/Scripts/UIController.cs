@@ -109,6 +109,7 @@ public class UIController : MonoBehaviour {
 	}
 
 	public void StartGameClick(){
+		//Hide the start screen UI elements
 		startBtn.gameObject.SetActive (false);
 		titlelbl.gameObject.SetActive (false);
 		introlbl.gameObject.SetActive (false);
